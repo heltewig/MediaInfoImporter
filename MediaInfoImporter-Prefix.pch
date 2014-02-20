@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'MediaInfoImporter' target in the 'MediaInfoImporter' project
+//
+
+#ifdef __OBJC__
+#endif
+
+// DLog only displays output when built with DEBUG C-flag (-DDEBUG).
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...) ;;;
+#endif
+
+// ALog always displays output regardless of the DEBUG setting.
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+

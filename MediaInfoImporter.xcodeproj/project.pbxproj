@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */; };
+		7C0CCB1E15D1CCBC007541C9 /* libmediainfo.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8CC5B015CB3131008DA6F9 /* libmediainfo.0.dylib */; };
+		7C292BB815D4187A00768FB2 /* MediaInfoImporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7C292BB715D4187A00768FB2 /* MediaInfoImporter.mm */; };
+		7C8CC5B215CB3172008DA6F9 /* libmediainfo.0.dylib in Copy Libraries */ = {isa = PBXBuildFile; fileRef = 7C8CC5B015CB3131008DA6F9 /* libmediainfo.0.dylib */; };
+		7C8CC5B715CB3210008DA6F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFF4967151F31520091B3D1 /* Foundation.framework */; };
+		7CFF49BC151F36120091B3D1 /* MediaInfoImporter.mdimporter in Install */ = {isa = PBXBuildFile; fileRef = 8D576316048677EA00EA77CD /* MediaInfoImporter.mdimporter */; };
+		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
+		C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CB2267E150819060089D0B9 /* Copy Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C8CC5B215CB3172008DA6F9 /* libmediainfo.0.dylib in Copy Libraries */,
+			);
+			name = "Copy Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CFF49AC151F35CD0091B3D1 /* Install */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /Users/heltewig/Library/Spotlight;
+			dstSubfolderSpec = 0;
+			files = (
+				7CFF49BC151F36120091B3D1 /* MediaInfoImporter.mdimporter in Install */,
+			);
+			name = Install;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		7C0CCB1815D1C942007541C9 /* MediaInfoImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfoImporter.h; sourceTree = "<group>"; };
+		7C292BB715D4187A00768FB2 /* MediaInfoImporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaInfoImporter.mm; sourceTree = "<group>"; };
+		7C8CC5B015CB3131008DA6F9 /* libmediainfo.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmediainfo.0.dylib; sourceTree = "<group>"; };
+		7C8CC5B315CB31E8008DA6F9 /* MediaInfoDLL_Static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfoDLL_Static.h; sourceTree = "<group>"; };
+		7CDBEFEC15D7BB3B00A75629 /* MediaInfoImporter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MediaInfoImporter-Prefix.pch"; sourceTree = "<group>"; };
+		7CFF4967151F31520091B3D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8D576316048677EA00EA77CD /* MediaInfoImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaInfoImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		C88FB7D7067446EC006EBB30 /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
+		C88FB7DB0674470F006EBB30 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/schema.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0CCB1E15D1CCBC007541C9 /* libmediainfo.0.dylib in Frameworks */,
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
+				7C8CC5B715CB3210008DA6F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MediaInfoImporter */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = MediaInfoImporter;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7C8CC5B015CB3131008DA6F9 /* libmediainfo.0.dylib */,
+				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				7CFF4967151F31520091B3D1 /* Foundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C88FB7E30674480E006EBB30 /* schema.strings */,
+				C88FB7D7067446EC006EBB30 /* schema.xml */,
+				8D576317048677EA00EA77CD /* Info.plist */,
+				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7C8CC5B315CB31E8008DA6F9 /* MediaInfoDLL_Static.h */,
+				7CDBEFEC15D7BB3B00A75629 /* MediaInfoImporter-Prefix.pch */,
+				08FB77B6FE84183AC02AAC07 /* main.c */,
+				2C05A19B06CAA52B00D84F6F /* GetMetadataForFile.m */,
+				7C0CCB1815D1C942007541C9 /* MediaInfoImporter.h */,
+				7C292BB715D4187A00768FB2 /* MediaInfoImporter.mm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* MediaInfoImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* MediaInfoImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70138C840896BE9A00968C2F /* Build configuration list for PBXNativeTarget "MediaInfoImporter" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				7CB2267E150819060089D0B9 /* Copy Libraries */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				7CFF49AC151F35CD0091B3D1 /* Install */,
+				7CBE843815D1E79200729CFB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaInfoImporter;
+			productInstallPath = /Library/Spotlight;
+			productName = MediaInfoImporter;
+			productReference = 8D576316048677EA00EA77CD /* MediaInfoImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 70138C880896BE9A00968C2F /* Build configuration list for PBXProject "MediaInfoImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* MediaInfoImporter */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* MediaInfoImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CBE843815D1E79200729CFB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change /usr/lib/libmediainfo.0.dylib @rpath/libmediainfo.0.dylib $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576312048677EA00EA77CD /* main.c in Sources */,
+				2C05A19C06CAA52B00D84F6F /* GetMetadataForFile.m in Sources */,
+				7C292BB815D4187A00768FB2 /* MediaInfoImporter.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D5B49A704867FD3000E48DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C88FB7E30674480E006EBB30 /* schema.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C88FB7DB0674470F006EBB30 /* English */,
+			);
+			name = schema.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70138C850896BE9A00968C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MediaInfoImporter-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "~/Library/Spotlight";
+				LD_DYLIB_INSTALL_NAME = "";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_CFLAGS[arch=*]" = "-DDEBUG";
+				PRODUCT_NAME = MediaInfoImporter;
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		70138C860896BE9A00968C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MediaInfoImporter-Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = MediaInfoImporter;
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+				"VALID_ARCHS[sdk=macosx*]" = "i386 x86_64";
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		70138C890896BE9A00968C2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		70138C8A0896BE9A00968C2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70138C840896BE9A00968C2F /* Build configuration list for PBXNativeTarget "MediaInfoImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70138C850896BE9A00968C2F /* Debug */,
+				70138C860896BE9A00968C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70138C880896BE9A00968C2F /* Build configuration list for PBXProject "MediaInfoImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70138C890896BE9A00968C2F /* Debug */,
+				70138C8A0896BE9A00968C2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
