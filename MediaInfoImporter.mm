@@ -225,5 +225,5 @@ Boolean ImportFile(CFMutableDictionaryRef attributes, CFURLRef urlForFile)
     
     return dataProvided;
 }
-    //NSString stringWithUTF8String:width.c_str()
+
 
