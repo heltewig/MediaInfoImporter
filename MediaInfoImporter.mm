@@ -87,7 +87,7 @@ Boolean ImportFile(CFMutableDictionaryRef attributes, CFURLRef urlForFile)
     }
     
     MediaInfo MI;
-    MI.Option("Info_Version", "0.7.58;MediaInfoImporter;0.0.1");
+    MI.Option("Info_Version", "0.7.78;MediaInfoImporter;0.0.1");
     MI.Option("Internet", "No");
     MI.Open(path.c_str());
     

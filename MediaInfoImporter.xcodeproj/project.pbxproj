@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -161,10 +161,10 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 70138C880896BE9A00968C2F /* Build configuration list for PBXProject "MediaInfoImporter" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -205,7 +205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "install_name_tool -change /usr/lib/libmediainfo.0.dylib @rpath/libmediainfo.0.dylib $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH";
+			shellScript = "install_name_tool -change /usr/local/lib/libmediainfo.0.dylib @rpath/libmediainfo.0.dylib $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -260,6 +260,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				"OTHER_CFLAGS[arch=*]" = "-DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.heltewig.mdimporter.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = MediaInfoImporter;
 				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
@@ -282,6 +283,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.heltewig.mdimporter.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = MediaInfoImporter;
 				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
@@ -293,10 +295,13 @@
 		70138C890896BE9A00968C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -308,6 +313,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;
